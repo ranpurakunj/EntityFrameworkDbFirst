@@ -1,0 +1,58 @@
+﻿@model EntityFrameworkDbFirst.tbl_User_Table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_User_Table</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Full_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Full_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Login_on)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Login_on)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active_status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.User_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
